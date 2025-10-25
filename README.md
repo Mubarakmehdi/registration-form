@@ -1,9 +1,9 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registration Form</title>
+  <title>Seminar Registration Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background: linear-gradient(135deg,#6dd5ed,#2193b0);
+      background: linear-gradient(135deg, #6dd5ed, #2193b0);
       color: #333;
       margin: 0;
       padding: 0;
@@ -22,7 +22,7 @@
       max-width: 400px;
       width: 90%;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     h2 {
       text-align: center;
@@ -33,7 +33,8 @@
       margin-bottom: 5px;
       font-weight: bold;
     }
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
       padding: 10px;
       margin-bottom: 15px;
@@ -55,7 +56,7 @@
     button:hover {
       opacity: 0.9;
     }
-    @media(max-width: 480px) {
+    @media (max-width: 480px) {
       .container {
         padding: 15px;
       }
@@ -64,7 +65,7 @@
 </head>
 <body>
   <form class="container" id="registrationForm" action="https://formsubmit.co/mubarakmehdi7@gmail.com" method="POST">
-    <h2>Registration Form</h2>
+    <h2>REGISTRATION FOR SEMINAR</h2>
 
     <label for="name">Full Name</label>
     <input type="text" id="name" name="Full Name" required />
@@ -79,8 +80,8 @@
     <input type="text" id="college" name="College" required />
 
     <!-- Optional: hidden input to avoid spam -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
 
     <button type="submit">Submit</button>
   </form>
@@ -98,8 +99,8 @@
           method: 'POST',
           body: formData,
           headers: {
-            'Accept': 'application/json'
-          }
+            'Accept': 'application/json',
+          },
         });
 
         if (response.ok) {
